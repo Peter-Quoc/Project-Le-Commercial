@@ -1,0 +1,74 @@
+/* Base Elements */
+footer{
+    background: #0a0a0a;
+    color: #ffffff;
+    margin-top: 5vh;
+    padding: 5vh;
+    height: 25%;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background: url("http://via.placeholder.com/2400x1200") 100% no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.hero-section .row {
+    height: 100%;
+}
+
+.hero-section .hero-section-text {
+    margin-top: 35vh;
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-section .hero-section-features {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-section .hero-section-features .cell:hover {
+    border-bottom: 3px purple solid;
+}
+
+/* Info Sections */
+
+/* Info Section 1 */
+
+.info-section-one {
+    margin-top: 10vh;
+}
+
+.info-section-one .info-section-one-headline {
+    margin-top: 3vh;
+}
+
+.info-section-one .info-section-one-headline .button {
+    border-radius: 25px;
+    width: 45%;
+    background: #0a0a0a;
+    color: rgb(124, 163, 79);
+}
+
+.info-section-two {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.info-section-three {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+/* Form Section */
+
+#footer-form input{
+    background: #292929;
+    padding: 20px;
+    color:rgb(124, 163, 79);
+    border: none;
+    border-radius: 25px;
+}
