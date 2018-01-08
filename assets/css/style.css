@@ -98,7 +98,7 @@ a {
     height: 25px;
 }
 
-#footer-form button {
+#footer-form button, #contact-form button {
     border-radius: 25px;
     width: 45%;
     background: #D7D5D6;
