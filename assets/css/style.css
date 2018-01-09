@@ -1,17 +1,22 @@
 /* Base Elements */
-
+header{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
 footer {
-    background: #C30712;
-    color: #ffffff;
+    /* background: #C30712; */
+    /* color: #ffffff; */
     margin-top: 5vh;
     padding: 5vh;
     height: 25%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:10px;
+    color: black;
 }
 
 a {
     color: #ffffff;
 }
-
 
 /* Hero Section */
 
@@ -53,9 +58,14 @@ a {
 
 .top-bar-left .menu a {
     color: white;
-    font-size: 1.4rem;
-    font-weight: bolder;
+    font-size: .7rem;
+    /* font-weight: bolder; */
 }
+
+.menu a:hover{
+  font-weight: bolder;
+}
+
 
 
 /* Info Sections */
@@ -103,4 +113,20 @@ a {
     width: 45%;
     background: #D7D5D6;
     color: #C30712;
+}
+
+footer .menu a{
+    font-size: 10px;
+    padding: 0.4rem 1rem;
+    color: black;
+}
+
+footer h5{
+  font-family: 'Montserrat', sans-serif;
+  color: #C30712;
+  font-weight: bolder;
+}
+
+footer p {
+  margin: 1px;
 }
