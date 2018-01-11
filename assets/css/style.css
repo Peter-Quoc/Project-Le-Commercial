@@ -18,6 +18,11 @@ a {
     color: #ffffff;
 }
 
+@font-face {
+font-family: "Handelgot Bold";
+src: url("assets/css/fonts/Handelgot bold - tt0768m.ttf");
+}
+
 /* Hero Section */
 
 .hero-section {
