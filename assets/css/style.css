@@ -4,14 +4,19 @@ header{
   font-size: 12px;
 }
 footer {
+    background: rgb(240, 239, 239);
     /* background: #C30712; */
     /* color: #ffffff; */
-    margin-top: 5vh;
-    padding: 5vh;
+    /* margin-top: 5vh; */
+    padding: 3vh;
     height: 25%;
     font-family: 'Montserrat', sans-serif;
     font-size:10px;
     color: black;
+    border-top: #C30712;
+}
+.Copywrite {
+    padding: 0px;
 }
 
 a {
@@ -26,7 +31,8 @@ src: url("assets/css/fonts/Handelgot bold - tt0768m.ttf");
 /* Hero Section */
 
 .hero-section {
-    background: url("http://via.placeholder.com/2400x1200") 100% no-repeat;
+    background: url("../images/houston_skyline.jpg") 100% no-repeat;
+    /* background: url("http://via.placeholder.com/2400x1200") 100% no-repeat; */
     background-size: cover;
     height: 35vh;
 }
@@ -125,6 +131,11 @@ footer .menu a{
     padding: 0.4rem 1rem;
     color: black;
 }
+
+footer a{
+    color: black;
+}
+
 
 footer h5{
   font-family: 'Montserrat', sans-serif;
