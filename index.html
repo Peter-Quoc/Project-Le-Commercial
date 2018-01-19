@@ -112,7 +112,7 @@
               </ul>
             </div>
           </div>
-          <div class="large-1 cell text-left">
+          <div class="large-1 cell text-left navdiv">
             <div class="footer-navbar">
               <ul class="vertical menu navbar-menu">
                 <li>
@@ -136,20 +136,23 @@
               </ul>
             </div>
           </div>
-          <div class="large-3 cell text-left">
+          <div class="large-3 cell text-left disclaimer">
             <p>© 2018, LE Realty Partners, LLC This information has been secured from sources we believe to be reliable, but LE Realty Partners,
               LLC or any affiliated companies, not limited to, all agents, independent associate, subsidiary, or employees make no representations
               or warranties, expressed or implied, as to the accuracy of the information. References to square footage or age are approximate.
               Buyer must verify the information that bears all risk for any inaccuracies. This information is subject to change without notice
             </p>
           </div>
-          <div class="large-2 cell text-left">
+          <div class="large-2 cell text-left opportunity">
             <h5>Exclusive Opportunities</h5>
-            <p>Enter your email address to be added to our database and recieve latest available properties for sale and lease
-              opportunities
+            <p>Enter your information to receive the latest properties opportunities
             </p>
             <form id="footer-form">
-              <input type="text" name="subscribe-email">
+              <input type="text" name="Name" placeholder="First and Last Name" required>
+              <input type="radio" name="PersonOfInterest" value="Investor" id="investor" required><label for="PersonOfInterest" required>Investor</label>
+              <input type="radio" name="PersonOfInterest" value="Agent" id="agent"><label for="PersonOfInterest" required>Agent</label>
+              <input type="email" name="subscribe-email" placeholder="Email Address" required>
+              <input type="tel" name="PhoneNumber" placeholder="Phone Number" required>
               <button class="button" type="submit">Submit</button>
             </form>
           </div>

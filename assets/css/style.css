@@ -7,13 +7,11 @@ footer {
     background: rgb(240, 239, 239);
     /* background: #C30712; */
     /* color: #ffffff; */
-    /* margin-top: 5vh; */
+    margin-top: 5vh;
     padding: 3vh;
-    height: 25%;
     font-family: 'Montserrat', sans-serif;
     font-size:10px;
     color: black;
-    border-top: #C30712;
 }
 .Copywrite {
     padding: 0px;
@@ -112,18 +110,21 @@ src: url("assets/css/fonts/Handelgot bold - tt0768m.ttf");
 
 #footer-form input {
     background: #F5F5F5;
-    padding: 20px;
+    padding: 10px;
     color: rgb(110, 109, 109);
     border: none;
-    border-radius: 25px;
-    height: 25px;
+    border-radius: 4px;
+    height: 15px;
+    font-size: 10px;
 }
 
 #footer-form button, #contact-form button {
-    border-radius: 25px;
-    width: 45%;
-    background: #D7D5D6;
-    color: #C30712;
+    border-radius: 4px;
+    width: 30%;
+    /* background: #D7D5D6;
+    color: #C30712; */
+    background: #C30712;
+    color: white;
 }
 
 footer .menu a{
@@ -136,13 +137,33 @@ footer a{
     color: black;
 }
 
+footer .navdiv{
+    border-left: 1px solid rgba(195, 7, 20, 0.5);
+}
+
+footer .disclaimer{
+    border-left: 1px solid rgba(195, 7, 20, 0.5);
+}
+
+footer .opportunity{
+    border-left: 1px solid rgba(195, 7, 20, 0.5);
+}
 
 footer h5{
-  font-family: 'Montserrat', sans-serif;
-  color: #C30712;
-  font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: #C30712;
+    font-weight: bolder;
 }
 
 footer p {
-  margin: 1px;
+    margin: 5px;
+}
+
+footer input{
+    margin-bottom:
+}
+
+label {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
