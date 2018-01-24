@@ -112,7 +112,7 @@ src: url("assets/css/fonts/Handelgot bold - tt0768m.ttf");
     background: #F5F5F5;
     padding: 10px;
     color: rgb(110, 109, 109);
-    border: none;
+    border: 1px solid rgb(63, 63, 63);
     border-radius: 4px;
     height: 15px;
     font-size: 10px;
@@ -159,9 +159,6 @@ footer p {
     margin: 5px;
 }
 
-footer input{
-    margin-bottom:
-}
 
 label {
     font-size: 10px;
