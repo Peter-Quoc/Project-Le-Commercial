@@ -14,9 +14,9 @@ use FormGuide\Handlx\FormHandler;
 $pp = new FormHandler(); 
 
 $validator = $pp->getValidator();
-$validator->fields(['Name', 'PersonOfInterest', 'subscribe-email','PhoneNumber'])->areRequired()->maxLength(50);
-$validator->field('subscribe-email')->isEmail();
-
+$validator->fields(['contact-name', 'contact-company', 'contact-email','contact-phone', 'contact-message'])->areRequired()->maxLength(50);
+$validator->field('contact-email')->isEmail();
+$validator->field('contact-message')->maxLength(6000);
 
 
 

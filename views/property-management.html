@@ -38,21 +38,24 @@
       </div>
       <!-- Hero Image section -->
       <div class="hero-section">
-        <div class="row">
-          <div class="small-12 columns align-self-middle">
-            <div class="row">
-              <div class="medium-5 columns">
-                <div class="hero-section-text">
-                  <h3>Le Commercial Logo</h3>
-                  <h5>Experienced. Exclusive Access. Proven Results.
-                  </h5>
+          <div class="row">
+            <div class="small-12 columns align-self-middle">
+              <div class="row">
+                <div class=" medium-5 columns">
+                  <div class="hero-section-text">
+                    <h2>Experience You Trust.</h2>
+                    <h2>Results You Rely On.</h2>
+                    <h2>Exclusivity You Need.</h2>
+                    <hr>
+                    <h1>LE COMMERCIAL</h1>
+                    <br>
+                    <h4>Backed by LE CAPTIAL</h4>
+                  </div>
                 </div>
               </div>
-              <div class="columns"></div>
             </div>
           </div>
         </div>
-      </div>
     </header>
 
     <!-- Info Section 1 -->
@@ -67,31 +70,38 @@
                 <form id="contact-form">
                   <div class="grid-x grid-padding-x">
                     <div class="small-3 cell">
-                      <label for="contact-name" class="text-right middle">Name</label>
+                      <label for="contact-name" class="text-right middle">Name *</label>
                     </div>
                     <div class="small-9 cell">
-                      <input type="text" id="contact-name">
+                      <input type="text" id="contact-name" name="contact-name" required maxlength="50">
                     </div>
 
                     <div class="small-3 cell">
-                      <label for="contact-company" class="text-right middle">Company</label>
+                      <label for="contact-company" class="text-right middle">Company *</label>
                     </div>
                     <div class="small-9 cell">
-                      <input type="text" id="contact-company">
+                      <input type="text" id="contact-company" name="contact-company" required maxlength="50">
                     </div>
                     <div class="small-3 cell">
-                      <label for="contact-phone" class="text-right middle">Phone</label>
+                      <label for="contact-email" class="text-right middle">Email *</label>
                     </div>
                     <div class="small-9 cell">
-                      <input type="tel" id="contact-phone">
+                      <input type="tel" id="contact-email" name="contact-email" required maxlength="50">
+                    </div>
+                    <div class="small-3 cell">
+                      <label for="contact-phone" class="text-right middle">Phone *</label>
+                    </div>
+                    <div class="small-9 cell">
+                      <input type="tel" id="contact-phone" name="contact-phone" required maxlength="50">
                     </div>
 
                     <div class="small-3 cell">
-                      <label for="contact-message" class="text-right middle">message</label>
+                      <label for="contact-message" class="text-right middle">Message</label>
                     </div>
                     <div class="small-9 cell">
-                      <textarea id="contact-message"></textarea>
+                      <textarea id="contact-message" name="contact-message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
                     </div>
+
                     <div class="small-3 cell">
                       <label for="contact-submit" class="text-right middle">
                         <i class="fas fa-asterisk"></i> Required Fields</label>
@@ -101,6 +111,8 @@
                     </div>
                   </div>
                 </form>
+                <div id="contact_success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                <div id="contact_error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
               </div>
             </div>
           </div>
@@ -205,10 +217,10 @@
     </div>
   </footer>
 
-  <script src="assets/bower_components/jquery/dist/jquery.js"></script>
-  <script src="assets/bower_components/what-input/dist/what-input.js"></script>
-  <script src="assets/bower_components/foundation-sites/dist/js/foundation.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="../assets/bower_components/jquery/dist/jquery.js"></script>
+  <script src="../assets/bower_components/what-input/dist/what-input.js"></script>
+  <script src="../assets/bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="../assets/js/app.js"></script>
 </body>
 
 </html>

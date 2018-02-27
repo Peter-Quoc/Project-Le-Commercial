@@ -1,7 +1,12 @@
 /* Base Elements */
-header{
+body, header{
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 300;
 }
 footer {
     background: rgb(240, 239, 239);
@@ -23,25 +28,39 @@ a {
 
 @font-face {
 font-family: "Handelgot Bold";
-src: url("assets/css/fonts/Handelgot bold - tt0768m.ttf");
+src: url("./fonts/Handelgot bold - tt0768m.ttf");
 }
+
+.logo{
+    height: 50px;
+}
+
 
 /* Hero Section */
 
 .hero-section {
-    background: url("../images/houston_skyline.jpg") 100% no-repeat;
+    /* background: url("../images/houston_skyline.jpg") 100% no-repeat; */
+    background: #2f2f2f;
     /* background: url("http://via.placeholder.com/2400x1200") 100% no-repeat; */
     background-size: cover;
-    height: 35vh;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .hero-section .row {
     height: 100%;
 }
 
-.hero-section .hero-section-text {
+.hero-section .hero-section-text > h2, h1, h4{
     color: #fefefe;
     text-shadow: 1px 1px 2px #0a0a0a;
+    font-weight: 300;
+}
+
+ h1{
+    font-family: "Handelgot Bold";
+    font-weight: 400;
 }
 
 .hero-section .hero-section-features {
@@ -96,13 +115,13 @@ src: url("assets/css/fonts/Handelgot bold - tt0768m.ttf");
 }
 
 .info-section-two {
-    margin-top: 3vh;
-    text-align: center;
+    margin-top: 5vh;
+
 }
 
 .info-section-three {
-    margin-top: 3vh;
-    text-align: center;
+    margin-top: 5vh;
+
 }
 
 

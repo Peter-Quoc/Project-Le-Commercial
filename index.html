@@ -9,14 +9,16 @@
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400;" rel="stylesheet">
 </head>
 
 <body>
   <div class="grid-container full">
     <header>
       <div class="top-bar">
+        <div class="menu-text"><img class="logo" src="./assets/images/LEC - Sideways Logo.png" alt="LE Commercial"></div>
         <div class="top-bar-left">
+           
           <ul class="dropdown menu align-right navbar-menu navtext" data-dropdown-menu>
             <li>
               <a href="index.html">HOME</a>
@@ -41,15 +43,16 @@
         <div class="row">
           <div class="small-12 columns align-self-middle">
             <div class="row">
-              <div class="medium-5 columns">
+              <div class=" medium-5 columns">
                 <div class="hero-section-text">
-                  <h3>Le Commercial Logo</h3>
-                  <h5>Experienced. Exclusive Access. Proven Results.
-                  </h5>
+                  <h2>Experience You Trust.</h2>
+                  <h2>Results You Rely On.</h2>
+                  <h2>Exclusivity You Need.</h2>
+                  <hr>
+                  <h1>LE COMMERCIAL</h1>
+                  <br>
+                  <h4>Backed by LE CAPTIAL</h4>
                 </div>
-              </div>
-              <div class="columns">
-
               </div>
             </div>
           </div>
@@ -59,7 +62,15 @@
   </div>
   <!-- <div class="grid-container full"> -->
   <!--Buildout - Feature Properties -->
-
+  <section class="info-section-two">
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="large-16 cell text-center">
+          <div id="buildout"></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
   <footer>
     <div class="grid-container full">
@@ -159,6 +170,17 @@
   <script src="assets/bower_components/jquery/dist/jquery.js"></script>
   <script src="assets/bower_components/what-input/dist/what-input.js"></script>
   <script src="assets/bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script type="text/javascript" src="//buildout.com/api.js?v8"></script>
+  <script type="text/javascript">
+    BuildOut.embed({
+      token:     "a8e98003d19bdea179da5f50a17d94cd23dc8421",
+      plugin:    "featured",
+      target:    "buildout",
+      width:     "80%",
+      height:    "411px"
+    });
+  </script>
+
   <script src="assets/js/app.js"></script>
 </body>
 
