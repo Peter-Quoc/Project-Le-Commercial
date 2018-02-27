@@ -219,6 +219,9 @@ footer p {
     text-align: left;
 }
 
+.footer-follow > a{
+    color:black;
+}
 
 label {
     font-size: 10px;
