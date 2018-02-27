@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Commercial | Houston Texas Real Estate Services</title>
+  <title>Property Management | Le Commercial | Houston Texas Real Estate Services</title>
   <link rel="stylesheet" href="../assets/css/app.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
@@ -15,20 +15,28 @@
 <body>
   <div class="grid-container full">
     <header>
-      <div class="top-bar">
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <div class="top-bar" id="main-nav">
+        <div class="menu-text">
+          <img class="logo" src="../assets/images/LEC - Sideways Logo.png" alt="LE Commercial">
+        </div>
         <div class="top-bar-left">
-          <ul class="dropdown menu align-right navbar-menu navtext" data-dropdown-menu>
+
+          <ul class="menu vertical medium-horizontal align-right navbar-menu navtext">
             <li>
-              <a href="../index.html">HOME</a>
+              <a href="/index.html">HOME</a>
             </li>
             <li>
-              <a href="properties.html">OUR PROPERTIES</a>
+              <a href="./properties.html">OUR PROPERTIES</a>
             </li>
             <li>
-              <a href="property-management.html">PROPERTY MANAGEMENT</a>
+              <a href="./property-management.html">PROPERTY MANAGEMENT</a>
             </li>
             <li>
-              <a href="client-portal.html">CLIENT PORTAL</a>
+              <a href="./client-portal.html">CLIENT PORTAL</a>
             </li>
             <li>
               <a href="https://marqg.github.io/Project-Le">INVESTORS</a>
@@ -38,183 +46,238 @@
       </div>
       <!-- Hero Image section -->
       <div class="hero-section">
-          <div class="row">
-            <div class="small-12 columns align-self-middle">
-              <div class="row">
-                <div class=" medium-5 columns">
-                  <div class="hero-section-text">
-                    <h2>Experience You Trust.</h2>
-                    <h2>Results You Rely On.</h2>
-                    <h2>Exclusivity You Need.</h2>
-                    <hr>
-                    <h1>LE COMMERCIAL</h1>
-                    <br>
-                    <h4>Backed by LE CAPTIAL</h4>
-                  </div>
+        <div class="row">
+          <div class="small-12 columns align-self-middle">
+            <div class="row">
+              <div class=" medium-5 columns">
+                <div class="hero-section-text">
+                  <h2>Experience You Trust.</h2>
+                  <h2>Results You Rely On.</h2>
+                  <h2>Exclusivity You Need.</h2>
+                  <hr>
+                  <h1>LE COMMERCIAL</h1>
+                  <br>
+                  <h4>Backed by LE CAPTIAL</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </header>
 
     <!-- Info Section 1 -->
     <section class="info-section-one">
       <div class="grid-container">
         <div class="grid-x grid-padding-x grid-margin-y">
+          <h2>Property Management</h2>
           <div class="large-12 cell">
             <div class="grid-x">
+              <div class="cell large-6">
+                <button class="button massive" id="form-main-button">Have a Maintenance Request? Click Here.</button>
+              </div>
+              <div class="cell large-6">
+                <button class="button massive" id="form-question-button">General Questions or Concerns? Click Here.</button>
+              </div>
               <div class="medium-12 cell info-section-two-headline">
-                <h2>Contact Us</h2>
-                <p>Please fill out this form and we will get back to you as soon as possible.</p>
-                <form id="contact-form">
-                  <div class="grid-x grid-padding-x">
-                    <div class="small-3 cell">
-                      <label for="contact-name" class="text-right middle">Name *</label>
-                    </div>
-                    <div class="small-9 cell">
-                      <input type="text" id="contact-name" name="contact-name" required maxlength="50">
-                    </div>
+                <div id="form-main" style="display: none;">
+                  <h2>Maintenance Request</h2>
+                  <form id="maintenance-form">
+                    <div class="grid-x grid-padding-x">
+                      <div class="small-1 cell">
+                        <label for="maintenance-name" class="text-right middle">Name *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="text" id="maintenance-name" name="maintenance-name" required maxlength="50">
+                      </div>
 
-                    <div class="small-3 cell">
-                      <label for="contact-company" class="text-right middle">Company *</label>
-                    </div>
-                    <div class="small-9 cell">
-                      <input type="text" id="contact-company" name="contact-company" required maxlength="50">
-                    </div>
-                    <div class="small-3 cell">
-                      <label for="contact-email" class="text-right middle">Email *</label>
-                    </div>
-                    <div class="small-9 cell">
-                      <input type="tel" id="contact-email" name="contact-email" required maxlength="50">
-                    </div>
-                    <div class="small-3 cell">
-                      <label for="contact-phone" class="text-right middle">Phone *</label>
-                    </div>
-                    <div class="small-9 cell">
-                      <input type="tel" id="contact-phone" name="contact-phone" required maxlength="50">
-                    </div>
+                      <div class="small-1 cell">
+                        <label for="maintenance-property" class="text-right middle">Property Address *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="text" id="maintenance-property" name="maintenance-property" required maxlength="100">
+                      </div>
+                      <div class="small-1 cell">
+                        <label for="maintenance-suite" class="text-right middle">Suite # *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="tel" id="maintenance-suite" name="maintenance-suite" required maxlength="50">
+                      </div>
+                      <div class="small-1 cell">
+                        <label for="maintenance-phone" class="text-right middle">Phone *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="tel" id="maintenance-phone" name="maintenance-phone" required maxlength="50">
+                      </div>
 
-                    <div class="small-3 cell">
-                      <label for="contact-message" class="text-right middle">Message</label>
-                    </div>
-                    <div class="small-9 cell">
-                      <textarea id="contact-message" name="contact-message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
-                    </div>
+                      <div class="small-1 cell">
+                        <label for="maintenance-issue" class="text-right middle">Issue *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <textarea id="maintenance-issue" name="maintenance-issue" placeholder="Your issue Here" maxlength="6000" rows="7" required></textarea>
+                      </div>
 
-                    <div class="small-3 cell">
-                      <label for="contact-submit" class="text-right middle">
-                        <i class="fas fa-asterisk"></i> Required Fields</label>
+                      <div class="small-1 cell">
+                        <label for="maintenance-submit" class="text-right middle">
+                          <i class="fas fa-asterisk"></i> Required Fields</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <button class="button" id="maintenance-submit" type="submit">Submit</button>
+                      </div>
                     </div>
-                    <div class="small-9 cell">
-                      <button class="button" id="contact-submit">Submit</button>
-                    </div>
+                  </form>
+                  <div id="maintenance_success_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Sent your message successfully!</h3>
                   </div>
-                </form>
-                <div id="contact_success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                <div id="contact_error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                  <div id="maintenance_error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3> Sorry there was an error sending your form.
+                  </div>
+                </div>
+
+                <div id="form-question" style="display: none;">
+                  <h2>General Questions / Concerns</h2>
+                  <form id="question-form">
+                    <div class="grid-x grid-padding-x">
+                      <div class="small-1 cell">
+                        <label for="question-name" class="text-right middle">Name *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="text" id="question-name" name="question-name" required maxlength="50">
+                      </div>
+                      <div class="small-1 cell">
+                        <label for="question-email" class="text-right middle">Email *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="tel" id="question-email" name="question-email" required maxlength="50">
+                      </div>
+                      <div class="small-1 cell">
+                        <label for="question-phone" class="text-right middle">Phone *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <input type="tel" id="question-phone" name="question-phone" required maxlength="50">
+                      </div>
+
+                      <div class="small-1 cell">
+                        <label for="question-message" class="text-right middle">Question / Concern *</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <textarea id="question-message" name="question-message" placeholder="Your Message Here" maxlength="6000" rows="7" required></textarea>
+                      </div>
+                      <div class="small-1 cell">
+                        <label for="question-submit" class="text-right middle">
+                          <i class="fas fa-asterisk"></i> Required Fields</label>
+                      </div>
+                      <div class="small-11 cell">
+                        <button class="button" id="question-submit" type="submit">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div id="question_success_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Sent your message successfully!</h3>
+                  </div>
+                  <div id="question_error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3> Sorry there was an error sending your form. 
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-  </section>
+    </section>
 
 
-  <!-- Footer -->
-  <footer>
-    <div class="grid-container full">
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="large-3 cell text-right">
-          <div class="footer-navbar">
-            <ul class="vertical menu navbar-menu ">
-              <li>
-                <a href="/index.html">Home</a>
-              </li>
-              <li>
-                <a href="properties.html">Properties</a>
-              </li>
-              <li>
-                <a href="services.html">Services</a>
-              </li>
-              <li>
-                <a href="about-us.html">About Us</a>
-              </li>
-              <li>
-                <a href="contact-us.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="our-team.html">Our Team</a>
-              </li>
-            </ul>
+    <!-- Footer -->
+    <footer>
+      <div class="grid-container full">
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="large-3 cell text-right">
+            <div class="footer-navbar">
+              <ul class="vertical menu navbar-menu ">
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./properties.html">Properties</a>
+                </li>
+                <li>
+                  <a href="./about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="./our-team.html">Our Team</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="large-3 cell text-left navdiv">
+            <h5>LE Commercial Real Estate</h5>
+            <p>11757 Katy Freeway, Suite 1300</p>
+            <p>Houston, TX 77079</p>
+            <p>
+              <i class="fas fa-building"></i> +1 713-996-8888</p>
+            <p>
+              <i class="fas fa-phone"></i> +1 800-608-7050</p>
+            <p>
+              <i class="fas fa-fax"></i> +1 832-213-1311</p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@le-commercial.com">info@le-commercial.com</a>
+            </p>
+            <div class="footer-follow">
+              <h6>Follow Us</h6>
+              <ul class="menu">
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-square fa-5x"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-twitter-square fa-5x"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-instagram fa-5x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="large-4 cell text-left opportunity">
+            <h5>Exclusive Opportunities</h5>
+            <p>Enter your information to receive the latest properties opportunities
+            </p>
+            <form id="footer-form">
+              <input type="text" name="Name" placeholder="First and Last Name" required>
+              <input type="radio" name="PersonOfInterest" value="Investor" id="investor" required>
+              <label for="PersonOfInterest" required>Investor</label>
+              <input type="radio" name="PersonOfInterest" value="Agent" id="agent">
+              <label for="PersonOfInterest" required>Agent</label>
+              <input type="email" name="subscribe-email" placeholder="Email Address" required>
+              <input type="tel" name="PhoneNumber" placeholder="Phone Number" required>
+              <button class="button small" type="submit">Submit</button>
+            </form>
           </div>
 
-        </div>
-        <div class="large-3 cell text-left navdiv">
-          <h5>LE Commercial Real Estate</h5>
-          <p>11757 Katy Freeway, Suite 1300</p>
-          <p>Houston, TX 77079</p>
-          <p>
-            <i class="fas fa-building"></i> +1 713-996-8888</p>
-          <p>
-            <i class="fas fa-phone"></i> +1 800-608-7050</p>
-          <p>
-            <i class="fas fa-fax"></i> +1 832-213-1311</p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:info@le-commercial.com">info@le-commercial.com</a>
-          </p>
-          <div class="footer-follow">
-            <h6>Follow Us</h6>
-            <ul class="menu">
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-square fa-5x"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter-square fa-5x"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram fa-5x"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="small-12 cell text-center Copywrite">
+
+            <p>© 2018, LE Realty Partners, LLC This information has been secured from sources we believe to be reliable, but
+              LE Realty Partners, LLC or any affiliated companies, not limited to, all agents, independent associate, subsidiary,
+              or employees make no representations or warranties, expressed or implied, as to the accuracy of the information.
+              References to square footage or age are approximate. Buyer must verify the information that bears all risk
+              for any inaccuracies. This information is subject to change without notice
+            </p>
+            <p>© 2018 LE Commercial Inc. All rights reserved</p>
           </div>
-        </div>
-        <div class="large-4 cell text-left opportunity">
-          <h5>Exclusive Opportunities</h5>
-          <p>Enter your information to receive the latest properties opportunities
-          </p>
-          <form id="footer-form">
-            <input type="text" name="Name" placeholder="First and Last Name" required>
-            <input type="radio" name="PersonOfInterest" value="Investor" id="investor" required>
-            <label for="PersonOfInterest" required>Investor</label>
-            <input type="radio" name="PersonOfInterest" value="Agent" id="agent">
-            <label for="PersonOfInterest" required>Agent</label>
-            <input type="email" name="subscribe-email" placeholder="Email Address" required>
-            <input type="tel" name="PhoneNumber" placeholder="Phone Number" required>
-            <button class="button small" type="submit">Submit</button>
-          </form>
-        </div>
-
-        <div class="small-12 cell text-center Copywrite">
-
-          <p>© 2018, LE Realty Partners, LLC This information has been secured from sources we believe to be reliable, but LE
-            Realty Partners, LLC or any affiliated companies, not limited to, all agents, independent associate, subsidiary,
-            or employees make no representations or warranties, expressed or implied, as to the accuracy of the information.
-            References to square footage or age are approximate. Buyer must verify the information that bears all risk for
-            any inaccuracies. This information is subject to change without notice
-          </p>
-          <p>© 2018 LE Commercial Inc. All rights reserved</p>
         </div>
       </div>
-    </div>
-    </div>
+  </div>
   </footer>
 
   <script src="../assets/bower_components/jquery/dist/jquery.js"></script>

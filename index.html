@@ -15,11 +15,15 @@
 <body>
   <div class="grid-container full">
     <header>
-      <div class="top-bar">
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <div class="top-bar" id="main-nav">
         <div class="menu-text"><img class="logo" src="./assets/images/LEC - Sideways Logo.png" alt="LE Commercial"></div>
         <div class="top-bar-left">
            
-          <ul class="dropdown menu align-right navbar-menu navtext" data-dropdown-menu>
+          <ul class="menu vertical medium-horizontal align-right navbar-menu navtext">
             <li>
               <a href="index.html">HOME</a>
             </li>
@@ -75,31 +79,28 @@
   <footer>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="large-3 cell text-right">
+        <div class="medium-3 cell">
           <div class="footer-navbar">
             <ul class="vertical menu navbar-menu ">
               <li>
                 <a href="/index.html">Home</a>
               </li>
               <li>
-                <a href="views/properties.html">Properties</a>
+                <a href="./views/properties.html">Properties</a>
               </li>
               <li>
-                <a href="views/services.html">Services</a>
+                <a href="./views/about-us.html">About Us</a>
               </li>
               <li>
-                <a href="views/about-us.html">About Us</a>
+                <a href="./views/contact-us.html">Contact Us</a>
               </li>
               <li>
-                <a href="views/contact-us.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="views/our-team.html">Our Team</a>
+                <a href="./views/our-team.html">Careers</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="large-3 cell text-left navdiv">
+        <div class="medium-3 cell text-left navdiv">
           <h5>LE Commercial Real Estate</h5>
           <p>11757 Katy Freeway, Suite 1300</p>
           <p>Houston, TX 77079</p>
@@ -134,7 +135,7 @@
             </ul>
           </div>
         </div>
-        <div class="large-4 cell text-left opportunity">
+        <div class="medium-4 cell text-left opportunity">
           <h5>Exclusive Opportunities</h5>
           <p>Enter your information to receive the latest properties opportunities
           </p>
@@ -177,7 +178,7 @@
       plugin:    "featured",
       target:    "buildout",
       width:     "80%",
-      height:    "411px"
+      height:    "600"
     });
   </script>
 

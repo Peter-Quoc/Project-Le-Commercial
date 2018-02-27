@@ -15,20 +15,28 @@
 <body>
   <div class="grid-container full">
     <header>
-      <div class="top-bar">
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <div class="top-bar" id="main-nav">
+        <div class="menu-text">
+          <img class="logo" src="../assets/images/LEC - Sideways Logo.png" alt="LE Commercial">
+        </div>
         <div class="top-bar-left">
-          <ul class="dropdown menu align-right navbar-menu navtext" data-dropdown-menu>
+
+          <ul class="menu vertical medium-horizontal align-right navbar-menu navtext">
             <li>
-              <a href="../index.html">HOME</a>
+              <a href="/index.html">HOME</a>
             </li>
             <li>
-              <a href="properties.html">OUR PROPERTIES</a>
+              <a href="./properties.html">OUR PROPERTIES</a>
             </li>
             <li>
-              <a href="property-management.html">PROPERTY MANAGEMENT</a>
+              <a href="./property-management.html">PROPERTY MANAGEMENT</a>
             </li>
             <li>
-              <a href="client-portal.html">CLIENT PORTAL</a>
+              <a href="./client-portal.html">CLIENT PORTAL</a>
             </li>
             <li>
               <a href="https://marqg.github.io/Project-Le">INVESTORS</a>
@@ -38,24 +46,24 @@
       </div>
       <!-- Hero Image section -->
       <div class="hero-section">
-          <div class="row">
-            <div class="small-12 columns align-self-middle">
-              <div class="row">
-                <div class=" medium-5 columns">
-                  <div class="hero-section-text">
-                    <h2>Experience You Trust.</h2>
-                    <h2>Results You Rely On.</h2>
-                    <h2>Exclusivity You Need.</h2>
-                    <hr>
-                    <h1>LE COMMERCIAL</h1>
-                    <br>
-                    <h4>Backed by LE CAPTIAL</h4>
-                  </div>
+        <div class="row">
+          <div class="small-12 columns align-self-middle">
+            <div class="row">
+              <div class=" medium-5 columns">
+                <div class="hero-section-text">
+                  <h2>Experience You Trust.</h2>
+                  <h2>Results You Rely On.</h2>
+                  <h2>Exclusivity You Need.</h2>
+                  <hr>
+                  <h1>LE COMMERCIAL</h1>
+                  <br>
+                  <h4>Backed by LE CAPTIAL</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
     </header>
 
@@ -94,19 +102,16 @@
                   <a href="/index.html">Home</a>
                 </li>
                 <li>
-                  <a href="properties.html">Properties</a>
+                  <a href="./properties.html">Properties</a>
                 </li>
                 <li>
-                  <a href="services.html">Services</a>
+                  <a href="./about-us.html">About Us</a>
                 </li>
                 <li>
-                  <a href="about-us.html">About Us</a>
+                  <a href="./contact-us.html">Contact Us</a>
                 </li>
                 <li>
-                  <a href="contact-us.html">Contact Us</a>
-                </li>
-                <li>
-                  <a href="our-team.html">Our Team</a>
+                  <a href="./our-team.html">Careers</a>
                 </li>
               </ul>
             </div>
@@ -161,8 +166,11 @@
               <input type="tel" name="PhoneNumber" placeholder="Phone Number" required>
               <button class="button small" type="submit">Submit</button>
             </form>
-            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            <div id="success_message" style="width:100%; height:100%; display:none; ">
+              <h3>Sent your message successfully!</h3>
+            </div>
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+              <h3>Error</h3> Sorry there was an error sending your form. </div>
           </div>
 
           <div class="small-12 cell text-center Copywrite">
@@ -177,10 +185,10 @@
           </div>
         </div>
       </div>
-      </div>
-    </footer>
+  </div>
+  </footer>
 
-    <script src="../assets/bower_components/jquery/dist/jquery.js"></script>
+  <script src="../assets/bower_components/jquery/dist/jquery.js"></script>
   <script src="../assets/bower_components/what-input/dist/what-input.js"></script>
   <script src="../assets/bower_components/foundation-sites/dist/js/foundation.js"></script>
   <script src="../assets/js/app.js"></script>
