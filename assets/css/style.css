@@ -100,12 +100,11 @@ src: url("./fonts/Handelgot bold - tt0768m.ttf");
 
 .top-bar-left .menu a {
     color: white;
-    font-size: .7rem;
-    /* font-weight: bolder; */
+    font-size: .8rem;
 }
 
-.menu a:hover{
-  font-weight: bolder;
+.navtext > li >a:hover{
+  font-size: 0.9rem;
 }
 
 
