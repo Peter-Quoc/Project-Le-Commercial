@@ -228,6 +228,16 @@ label {
     font-family: 'Montserrat', sans-serif;
 }
 
+.sublogo{
+    font-family: "Handelgot Bold";
+}
+
+.sublogo-img{
+    position: relative;
+    height: 20px;
+    top:-3px;
+    line-height: 5px;
+}
 
 @media only screen and (min-width: 768px)
 {
